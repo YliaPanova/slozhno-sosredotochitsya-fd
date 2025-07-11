@@ -1,4 +1,12 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --title-text-size: 1.125rem;
+  --text-size: 1.125rem;
+  --line-hight-text: 1.4625rem;
+  --title-header-size-mobile: 7.25rem;
+  --button-text-size-mobile: 1.125rem;
+  --title-header-size-tablet: 7.5rem;
+  --button-text-size-tablet: 1.125rem;
+  --line-hight-button-tablet: 1.125rem;
+  --title-header-size-desktop: 9.8125rem;
+  --button-text-size-desktop: 1.5625rem;
+}
