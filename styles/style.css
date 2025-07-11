@@ -255,7 +255,6 @@
   font-weight: 700;
   font-size: var(--title-text-size);
   line-height: var(--line-hight-text);
-  font-style: bold;
   color: var(--title-section-color);
 }
 
@@ -264,7 +263,6 @@
   font-weight: 700;
   font-size: var(--title-text-size);
   line-height: var(--line-hight-text);
-  font-style: bold;
   color: var(--title-text-color);
   background-color: var(--bg-title-text);
 }
@@ -334,10 +332,10 @@
   object-fit: contain;
   object-position: center;
 }
+
 .section__image {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: fit-content;
   gap: 10px;
   margin-block-end: 80px;
 }
@@ -405,7 +403,6 @@
 .section__medium {
   display: grid;
   grid-template-columns: 20% 80%;
-  grid-template-rows: repeat(auto-fit, max (728px));
   gap: 15px;
   margin-block-end: 80px;
   margin-inline-end: 27px;
@@ -450,12 +447,13 @@
 .section__large {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: repeat (auto-fit, 1fr);
+  grid-template-rows: repeat(auto-fit, 1fr);
   gap: 15.5px;
   margin-block-end: 75px;
   margin-inline-end: -3px;
   margin-inline-start: 25px;
 }
+
 .section__large-title {
   grid-column: 1;
   grid-row: span 11;
@@ -548,7 +546,7 @@
 
 .section__image-street {
   grid-column: 2 / 4;
-  grid-row: 4 / 6; 
+  grid-row: 4 / 6;
 }
 }
 
