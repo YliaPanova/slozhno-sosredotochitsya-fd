@@ -1,22 +1,39 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #000028;
+    --title-color: #db00ff;
+    --accent-color: #ff0070;
+    --button-color: #ff0070;
+    --title-text-color: #000028;
+    --title-section-color: #ff0070;
+    --text-color: #f1b2ce;
+    --bg-title-text: #ff0070;
+    --color-hover: #ff007066;
+  }
+
+  .page {
+    background-image: url(../images/cover-image-dark.png);
+  }
+}
+
 :root.theme-dark {
   --bg-color: #000028;
-  --title-color: #DB00FF;
-  --accent-color: #FF0070;
-  --button-color: #FF0070;
+  --title-color: #db00ff;
+  --accent-color: #ff0070;
+  --button-color: #ff0070;
   --title-text-color: #000028;
-  --title-section-color: #FF0070;
-  --text-color:#F1B2CE;
-  --bg-title-text:#FF0070;
-  --color-hover: #FF007066;
+  --title-section-color: #ff0070;
+  --text-color: #f1b2ce;
+  --bg-title-text: #ff0070;
+  --color-hover: #ff007066;
 }
 
 .theme-dark .page {
   background-image: url(../images/cover-image-dark.png);
 }
 
-
 .theme-dark .rec {
-  display: block;
+  display: flex;
   position: absolute;
   z-index: 1;
   font-family: "IBM Plex mono", sans-serif;
@@ -24,39 +41,20 @@
   font-size: var(--text-size);
   line-height: 1.5625rem;
   color: var(--accent-color);
-  left: 82%;
-  bottom: 96.5%;
-}
-
-@media (768px <= width < 1024px) {
-    .theme-dark .rec {
-    left: 91.5%;
-    bottom: 97.5%;
-  }
-}
-
-@media (width >= 1024px) {
-  .theme-dark .rec {
-    left: 94%;
-    bottom: 96.5%;
-  }
+  top: 0;
+  right: 0;
+  align-items: center;
+  text-align: center;
+  padding-right: 8px;
+  gap: 10px;
 }
 
 .theme-dark .rec::after {
   content: "";
   display: block;
-  position: absolute;
-  width: 9px;
-  height: 9px;
+  inline-size: 9px;
+  block-size: 9px;
   background-color: var(--accent-color);
   box-shadow: 0px 0px 4px 2px var(--accent-color);
   border-radius: 50%;
-  left: 125%;
-  bottom: 25%;
-}
-@media (width >= 1024px) {
-    .theme-dark .rec::after {
-    left: 115%;
-    bottom: 35%;
-  }
 }
