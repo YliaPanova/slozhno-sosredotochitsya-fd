@@ -7,7 +7,7 @@
 }
 
 .header {
-  height: 100vh;
+  min-block-size: 100vh;
   margin: 10px 10px 30px 10px;
 }
 
@@ -26,7 +26,7 @@
 .decorated-zone {
   display: block;
   position: relative;
-  min-block-size: 648px;
+  min-height: 648px;
 }
 
 .decorated-zone::after {
@@ -57,13 +57,13 @@
 
 @media (width >= 768px) {
   .decorated-zone {
-    min-block-size: 984px;
+    min-height: 984px;
   }
 }
 
 @media (width >= 1024px) {
   .decorated-zone {
-    min-block-size: 728px;
+    min-height: 728px;
   }
 }
 
